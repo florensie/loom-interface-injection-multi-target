@@ -32,7 +32,10 @@
     "minecraft": "1.18.x",
     "java": ">=17"
   },
-  "suggests": {
-    "another-mod": "*"
+
+  "custom": {
+    "loom:injected_interfaces": {
+      "net/minecraft/class_1309": ["net/fabricmc/example/LivingEntityExtension"]
+    }
   }
 }
