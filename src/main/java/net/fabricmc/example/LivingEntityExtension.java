@@ -1,5 +1,7 @@
 package net.fabricmc.example;
 
 public interface LivingEntityExtension {
-    void doTheThing();
+    default void doTheThing() {
+        throw new IllegalStateException();
+    }
 }
